@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Burger Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="home.html"><img class="logo" src="img/LOGO.png" alt="LOGO"></a>
+            <ul id="menu-list">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="homeButton" id="btnxd" onclick="login()">Sign Up</button></li>
+            </ul>
+            <div class="navbar">
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main" id="reslog">
+        <div class="reslogDiv">
+            <div class="reslog">
+                <h3>Login to Exiled Games</h3>
+                <div class="linkLogin">
+                    <img src="img/image_5__1_-removebg-preview.png" alt="">
+                    <p>Log in With Google</p>
+                </div>
+
+                <div class="linkLogin">
+                    <img src="img/image_6__1_-removebg-preview.png" alt="">
+                    <p>Log in with Facebook</p>
+                </div>
+
+                <div class="line"><hr><p>or</p><hr></div>
+
+                <div class="logi">
+                    <input type="text" id="username" placeholder="username..">
+                    <input type="text" id="pass" placeholder="password..">
+                    <input type="text" id="con" placeholder="confirm password">
+                </div>
+                <button class="loginbtn" onclick="realLogin()">LOGIN</button>
+            </div>
+        </div>
+    </div>
+    <div class="homeDisplay">
+        <div class="homeContext">
+            <h1 class="h1">Play Free</h1>
+            <h1 class="h1">Games Here!</h1>
+            <p class="p">Come explore the world of Exiled Games – where you can
+                discover a vast selection of free mobile and desktop
+                games!</p>
+            <a href="games.html">
+              <button class="btn1">View All Games</button>
+            </a>
+        </div>
+        <div class="imgs2">
+            <img class="imgs" src="img/image_1-removebg-preview 1.png" alt="homeLogo">
+        </div>
+    </div>
+    <div class="divLink">
+      <a href="https://twitter.com/@LikedJans" target="_blank">
+        <img src="img/TwitterX.png" alt="LINK">
+      </a>
+      <a href="https://www.facebook.com/janssen.romero.92?mibextid=ZbWKwL" target="_blank">
+        <img src="img/Facebook.png" alt="Facebook">
+      </a>
+      <a href="mailto:romerojanssen052501@gmail.com">
+        <img src="img/Gmail Logo.png" alt="gmail">
+      </a>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

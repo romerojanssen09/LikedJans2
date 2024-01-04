@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Burger Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+        <nav>
+            <a href="home.html"><img class="logo" src="img/LOGO.png" alt="LOGO"></a>
+            <ul id="menu-list">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="homeButton" id="btnxd" onclick="login()">Sign Up</button></li>
+            </ul>
+            <div class="navbar">
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main" id="reslog">
+        <div class="reslogDiv">
+            <div class="reslog" id="resLogDiv">
+              <h3 id="message"></h3>
+                <h3>Login to Exiled Games</h3>
+                <div class="linkLogin">
+                    <img src="img/image_5__1_-removebg-preview.png" alt="">
+                    <p>Log in With Google</p>
+                </div>
+
+                <div class="linkLogin">
+                    <img src="img/image_6__1_-removebg-preview.png" alt="">
+                    <p>Log in with Facebook</p>
+                </div>
+
+                <div class="line"><hr><p>or</p><hr></div>
+
+                <div class="logi">
+                    <input type="text" placeholder="username..">
+                    <input type="password"  placeholder="password..">
+                </div>
+                <button class="loginbtn" onclick="realLogin()">LOGIN</button>
+            </div>
+        </div>
+    </div>
+    <div class="gamesContainer">
+      <h1 id="h1">Adventure games</h1>
+      <div class="games">
+        <div class="gamesContent">
+          <img id="imahe1" src="games/GuardiansoftheGalaxy.webp" alt="game" />
+          <div class="gamesName">
+            <p>Guardian of the galaxy</p>
+            <button onclick="downloadF('imahe1')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe2" src="games/BioshockInfinite.webp" alt="game" />
+          <div class="gamesName">
+            <p>Bioshock Infinite</p>
+            <button onclick="downloadF('imahe2')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe3" src="games/gonehome.webp" alt="game" />
+          <div class="gamesName">
+            <p>Gone Home</p>
+            <button onclick="downloadF('imahe3')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe4" src="games/hogwartslegacy.webp" alt="game" />
+          <div class="gamesName">
+            <p>Hogwarts Legacy</p>
+            <button onclick="downloadF('imahe4')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe5" src="games/thewolfamongus.webp" alt="game" />
+          <div class="gamesName">
+            <p>the wolf among us</p>
+            <button onclick="downloadF('imahe5')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe6" src="games/farcry4.webp" alt="game" />
+          <div class="gamesName">
+            <p>far cry 4</p>
+            <button onclick="downloadF('imahe6')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe7" src="games/riftapart.webp" alt="game" />
+          <div class="gamesName">
+            <p>rift a part</p>
+            <button onclick="downloadF('imahe7')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe8" src="games/starfield.webp" alt="game" />
+          <div class="gamesName">
+            <p>star field</p>
+            <button onclick="downloadF('imahe8')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe9" src="games/awayout.webp" alt="game" />
+          <div class="gamesName">
+            <p>away out</p>
+            <button onclick="downloadF('imahe9')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe10" src="games/fallout4.webp" alt="game" />
+          <div class="gamesName">
+            <p>fallout 4</p>
+            <button onclick="downloadF('imahe10')">download</button>
+          </div>
+        </div>
+      </div>
+      <h1 id="h1">Offline games</h1>
+      <div class="games">
+        <div class="gamesContent">
+          <img id="imahe11" src="games/prosniper.jpeg" alt="game" />
+          <div class="gamesName">
+            <p>Pro Sniper</p>
+            <button onclick="downloadF('imahe11')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe12" src="games/armytruckdriving.jpeg" alt="game" />
+          <div class="gamesName">
+            <p>army truck driving</p>
+            <button onclick="downloadF('imahe12')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe13" src="games/3dpoolball.jpeg" alt="game" />
+          <div class="gamesName">
+            <p>3D poolball</p>
+            <button onclick="downloadF('imahe13')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe14" src="games/2Dstrike.jpeg" alt="game" />
+          <div class="gamesName">
+            <p>2D strike</p>
+            <button onclick="downloadF('imahe14')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe15" src="games/plagueinc.jpeg" alt="game" />
+          <div class="gamesName">
+            <p>plague inc</p>
+            <button onclick="downloadF('imahe15')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe16" src="games/falloutshelter.jpeg" alt="game" />
+          <div class="gamesName">
+            <p>fallout shelter</p>
+            <button onclick="downloadF('imahe16')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe17" src="games/darknessarises.jpeg" alt="game" />
+          <div class="gamesName">
+            <p>darkness arises</p>
+            <button onclick="downloadF('imahe17')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe18" src="games/goingballs.jpeg" alt="game" />
+          <div class="gamesName">
+            <p>going balls</p>
+            <button onclick="downloadF('imahe18')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe19" src="games/solarsmash.jpeg" alt="game" />
+          <div class="gamesName">
+            <p>solar smash</p>
+            <button onclick="downloadF('imahe19')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe20" src="games/hillclimb.jpeg" alt="game" />
+          <div class="gamesName">
+            <p>hill climb</p>
+            <button onclick="downloadF('imahe20')">download</button>
+          </div>
+        </div>
+      </div>
+      <h1 id="h1">Stylized Games</h1>
+      <div class="games">
+        <div class="gamesContent">
+          <img id="imahe21" src="games/happys_humble_burger_barn_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>happys humble burger barn</p>
+            <button onclick="downloadF('imahe21')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe22" src="games/pilgrims_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>pilgrims</p>
+            <button onclick="downloadF('imahe22')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe23" src="games/gomoku_lets_go_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>gomoku lets go</p>
+            <button onclick="downloadF('imahe23')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe24" src="games/slice_of_sea_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>slice of sea</p>
+            <button onclick="downloadF('imahe24')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe25" src="games/papetura_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>papetura</p>
+            <button onclick="downloadF('imahe25')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe26" src="games/train_valley_2_-_community_edition_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>train valley 2 community edition</p>
+            <button onclick="downloadF('imahe26')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe27" src="games/creaks_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>creaks</p>
+            <button onclick="downloadF('imahe27')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe28" src="games/return_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>return</p>
+            <button onclick="downloadF('imahe28')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe29" src="games/shovel_knight_pocket_dungeon_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>shovel knight pocket dungeon</p>
+            <button onclick="downloadF('imahe29')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe30" src="games/the_talos_principle_2_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>the talos principle 2</p>
+            <button onclick="downloadF('imahe30')">download</button>
+          </div>
+        </div>
+      </div>
+      <h1 id="h1">Casual games</h1>
+      <div class="games">
+        <div class="gamesContent">
+          <img id="imahe31" src="games/go_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>Go</p>
+            <button onclick="downloadF('imahe31')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe32" src="games/hocus_2_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>hocus 2</p>
+            <button onclick="downloadF('imahe32')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe33" src="games/bubble_shooter_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>bubble shooter</p>
+            <button onclick="downloadF('imahe33')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe34" src="games/shapik_the_moon_quest_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>shapik the moon quest</p>
+            <button onclick="downloadF('imahe34')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe35" src="games/sandwich_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>sandwich</p>
+            <button onclick="downloadF('imahe35')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe36" src="games/crazy_ball_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>crazy ball</p>
+            <button onclick="downloadF('imahe36')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe37" src="games/elasto_mania_remastered_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>elasto mania remastered</p>
+            <button onclick="downloadF('imahe37')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe38" src="games/peace_death_2_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>peace death 2</p>
+            <button onclick="downloadF('imahe38')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe39" src="games/adorable_witch_4_lust_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>adorable witch 4 lust</p>
+            <button onclick="downloadF('imahe39')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe40" src="games/chicken_invaders_2_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>chicken invaders 2</p>
+            <button onclick="downloadF('imahe40')">download</button>
+          </div>
+        </div>
+      </div>
+      <h1 id="h1">Puzzle games</h1>
+      <div class="games">
+        <div class="gamesContent">
+          <img id="imahe41" src="games/tetris_effect_connected_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>tetris effect connected</p>
+            <button onclick="downloadF('imahe41')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe42" src="games/ghost_trick_phantom_detective_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>ghost trick phantom detective</p>
+            <button onclick="downloadF('imahe42')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe43" src="games/supraland_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>supraland</p>
+            <button onclick="downloadF('imahe43')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe44" src="games/unpacking_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>unpacking</p>
+            <button onclick="downloadF('imahe44')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe45" src="games/jusant_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>jusant</p>
+            <button onclick="downloadF('imahe45')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe46" src="games/chicory_a_colorful_tale_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>chicory a colorful tale</p>
+            <button onclick="downloadF('imahe46')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe47" src="games/baba_is_you_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>baba is you</p>
+            <button onclick="downloadF('imahe47')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe48" src="games/cocoon_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>cocoon</p>
+            <button onclick="downloadF('imahe48')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe49" src="games/the_talos_principle_2_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>the talos principle 2</p>
+            <button onclick="downloadF('imahe49')">download</button>
+          </div>
+        </div>
+        <div class="gamesContent">
+          <img id="imahe50" src="games/shovel_knight_pocket_dungeon_logo.jpg" alt="game" />
+          <div class="gamesName">
+            <p>shovel knight pocket dungeon</p>
+            <button onclick="downloadF('imahe50')">download</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

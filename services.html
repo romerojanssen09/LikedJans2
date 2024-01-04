@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Burger Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="home.html"><img class="logo" src="img/LOGO.png" alt="LOGO"></a>
+            <ul id="menu-list">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="homeButton" id="btnxd" onclick="login()">Sign Up</button></li>
+            </ul>
+            <div class="navbar">
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main" id="reslog">
+        <div class="reslogDiv">
+            <div class="reslog">
+                <h3>Login to Exiled Games</h3>
+                <div class="linkLogin">
+                    <img src="img/image_5__1_-removebg-preview.png" alt="">
+                    <p>Log in With Google</p>
+                </div>
+
+                <div class="linkLogin">
+                    <img src="img/image_6__1_-removebg-preview.png" alt="">
+                    <p>Log in with Facebook</p>
+                </div>
+
+                <div class="line"><hr><p>or</p><hr></div>
+
+                <div class="logi">
+                    <input type="text" id="username" placeholder="username..">
+                    <input type="text" id="pass" placeholder="password..">
+                    <input type="text" id="con" placeholder="confirm password">
+                </div>
+                <button class="loginbtn" onclick="realLogin()">LOGIN</button>
+            </div>
+        </div>
+    </div>
+        <div class="services">
+            <div class="top">
+                <img class="imgServices" src="img/image_9-removebg-preview.png" alt="">
+                <h2>Free Games</h2>
+                <p>We'll create custom Gmail
+                    notifications that capture your
+                    brand's unique voice and
+                    express your creative vision.</p>
+                <h4>Read More</h4>
+            </div>
+            <div class="top">
+                <img class="imgServices" src="img/image7.png" alt="">
+                <h2>Free Games Download</h2>
+                <p>We help businesses create and
+                    deliver engaging notifications that
+                    capture attention and drive action.</p>
+                <h4>Read More</h4>
+            </div>
+            <div class="top">
+                <img class="imgServices" src="img/image_8-removebg-preview.png" alt="">
+                <h2>Free Games Library Update Daily</h2>
+                <p>We provide real-time updates to
+                    help you stay ahead of the curve
+                    and take your creative ideas to
+                    the next level.</p>
+                <h4>Read More</h4>
+            </div>
+        </div>
+        <div class="happy">
+            <div class="servText">
+                <h1>Happy Customers</h1>
+                <p>We provide entertainment and fun for everyone with our unique and creative games!</p>
+                <a href="games.html">
+                <button class="btnServ">Games</button>
+                </a>
+            </div>
+            <div>
+                <img class="servImg" src="img/rate.png" alt="">
+            </div>
+        </div>
+        <div class="servSub">
+            <h1>Subcribe to Exiled Games</h1>
+            <p>Enter your email address to register to our Exiled Games subcription delivared on regular basis!</p>
+            <div class="servBtn">
+                <input type="text" placeholder="Email Address">
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

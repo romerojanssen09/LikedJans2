@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Burger Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html"><img class="logo" src="img/LOGO.png" alt="LOGO"></a>
+            <ul id="menu-list">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="homeButton" id="btnxd" onclick="login()">Sign Up</button></li>
+            </ul>
+            <div class="navbar">
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main" id="reslog">
+        <div class="reslogDiv">
+            <div class="reslog">
+                <h3>Login to Exiled Games</h3>
+                <div class="linkLogin">
+                    <img src="img/image_5__1_-removebg-preview.png" alt="">
+                    <p>Log in With Google</p>
+                </div>
+
+                <div class="linkLogin">
+                    <img src="img/image_6__1_-removebg-preview.png" alt="">
+                    <p>Log in with Facebook</p>
+                </div>
+
+                <div class="line"><hr><p>or</p><hr></div>
+
+                <div class="logi">
+                    <input type="text" id="username" placeholder="username..">
+                    <input type="text" id="pass" placeholder="password..">
+                    <input type="text" id="con" placeholder="confirm password">
+                </div>
+                <button class="loginbtn" onclick="realLogin()">LOGIN</button>
+            </div>
+        </div>
+    </div>
+    <div class="containerAbout">
+        <h1 class="h1About">About Us</h1>
+        <div class="contentAbout">
+            <div class="mission">
+                <h1 class="h1About">Our Mission</h1>
+                <p class="pAbout">Our mission at Games Here is to provide our 
+                    customers with an unparalleled gaming 
+                    experience. We strive to create unique and 
+                    innovative digital experiences that bring joy and 
+                    entertainment to people around the world. We are 
+                    committed to providing our customers with the 
+                    highest quality gaming products and services, 
+                    while ensuring our products are accessible, fun 
+                    and engaging.</p>
+            </div>
+            <div class="teamDiv">
+                <div class="team">
+                    <h1 class="h1About">Our Team</h1>
+                    <p class="pAbout">We are a creative digital agency that offers an
+                        extensive library of games for both desktop and 
+                        mobile users. Our mission is to make gaming more
+                        accessible to people of all ages and interests, 
+                        providing the most enjoyable experience possible.
+                        Our team is passionate about creating a vibrant
+                        and engaging gaming community, so join us and 
+                        let the fun begin!</p>
+                </div>
+            </div>
+            <div class="developerDiv">
+                <div class="meAbout">
+                    <h1>Developer</h1>
+                    <img class="creator" src="img/me.png" alt="Creator">
+                </div>
+            </div>
+            <div class="creatorD">
+                <div class="creatorDiv">
+                    <div class="meAbout">
+                        <h1>Creator</h1>
+                        <img class="creator" src="img/me.png" alt="Creator">
+                    </div>
+                </div>
+            </div>
+            <img class="imgAbout" src="img/image4.png" alt="BigIMAGE">
+        </div>
+    </div>
+    <div class="emailAbout">
+            <h1 class="h1About1">Your e-mail address to receive the Term & Condition</h1>
+            <p class="pAbout1">You will receive the Terms & Conditions to this email address</p>
+            <div class="btn">
+                <input class="inputAbout" type="text" placeholder="Email Address">
+                <button class="buttonAbout">Send</button>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
