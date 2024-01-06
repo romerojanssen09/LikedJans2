@@ -140,6 +140,10 @@ nav {
     transform: rotate(45deg) translate(-5px, -8px);
   }
 
+  .burger-menu.active{
+    margin-right: -20px;
+  }
+
   #menu-list.active {
     opacity: 1;
     transform: translateY(0);
